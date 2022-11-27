@@ -65,7 +65,7 @@ function game(){
     humanScore = 0;
     computerScore = 0;
 
-    for(let i = 1; i <= 5; i++){ 
+    for(let i = 1; i <= undefined; i++){ 
         let playerSelection = prompt(`Rock, Paper, or Scissors?`); 
         let computerSelection = getComputerChoice(); 
         console.log(`Round ${i}`);
