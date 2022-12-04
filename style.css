@@ -43,6 +43,7 @@ table {
 	border-spacing: 0;
 }
 
+
 @keyframes pop-out {
     0% {
         opacity: 0;
@@ -125,25 +126,6 @@ h2{
     box-shadow: -1px 6px 9px -1px #001524;
     transform: translateY(-5px);
 }
-.play{
-    transform: translateY(450px);
-    position: static;
-    font-size: 18px;
-    padding:18px 36px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    border-radius: 8%;
-    border: none;
-    transition: .25s linear;
-    background-color: #FFECD1;
-    color: #001524;
-    margin-bottom: 16px;
-}
-
-.play:hover{
-    box-shadow: -1px 6px 9px -1px #001524;
-    transform: translateY(-5px);
-}
 
 .computer{
     display: flex;
@@ -198,4 +180,36 @@ i{
     color: #FFECD1;
 }
 
+@media only screen and (max-width: 500px) {
+    /* styles for screens with a width of 600px or less */
 
+    body{
+        margin-top: 10%;
+        margin-bottom: 50px;
+        width: 500px;
+    }
+    .rps{
+        font-size: 22px;
+    }
+    h2, h3{
+        font-size: 18px;
+    }
+    .weapons {
+        gap: 20px;
+    }
+    i{
+        font-size: 22px;
+    }
+    .rock, .paper, .scissors{
+        padding: 24px;
+    }
+    .computerPick{
+        width: 24px;
+        height: 24px;
+        padding: 24px;
+        font-size: 22px;
+    }
+    .bothScore{
+        gap: 24px
+    }
+  }
