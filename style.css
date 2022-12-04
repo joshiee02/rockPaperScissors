@@ -1,0 +1,201 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@keyframes pop-out {
+    0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+  }
+
+body{
+    display: flex;
+    height: 99vh;
+    background-color: #15616D;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.rps{
+    position: fixed;
+    display: flex;
+    font-size: 42px;
+    color: lightgreen;
+    font-family: 'Rock Salt', cursive;
+    justify-content: center;
+    transition: ease-in-out 1s;
+}
+
+#titleRock{
+    color: #d3d3d3;
+}
+
+#titleScissors{
+    color: red;    
+}
+
+.hidden{
+    opacity: 0;
+}
+
+h2{
+    margin-top: 40px;
+    text-align: center;
+    font-size: 36px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    transition: ease 1.5s;
+}
+
+.versus{
+    text-align: center;
+    font-size: 32px;
+    color: white;
+    margin-top: 42px;
+    margin-bottom:42px; 
+    transition: ease 1.5s;   
+}
+.weapons{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    transition: ease 1.5s;
+}
+.start {
+    transform: translateY(-386px);
+  }
+
+
+
+.rock, .paper, .scissors {
+    padding: 38px;
+    border-radius: 50%;
+    background-color: #FFECD1;
+    transition: all .25s ease-in-out;
+}
+
+.rock, .paper, .scissors:hover{
+    box-shadow: -1px 6px 9px -1px #001524;
+    transform: translateY(-5px);
+}
+.play{
+    transform: translateY(450px);
+    position: static;
+    font-size: 18px;
+    padding:18px 36px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    border-radius: 8%;
+    border: none;
+    transition: .25s linear;
+    background-color: #FFECD1;
+    color: #001524;
+    margin-bottom: 16px;
+}
+
+.play:hover{
+    box-shadow: -1px 6px 9px -1px #001524;
+    transform: translateY(-5px);
+}
+
+.computer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: ease 1.5s;
+}
+.computerPick{
+    margin-top: 42px;
+    width: 38px;
+    height: 38px;
+    padding: 38px;
+    background-color: #FFECD1;
+    border-radius: 50%;
+    transition: all .25s ease-in-out;
+}
+h3{
+    text-align: center;
+    font-size: 36px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.bothScore{
+    margin-top: 72px;
+    display: flex;
+    justify-content: center;
+    gap: 72px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    transition: ease 1.5s;
+}
+
+.player, .round, .computer{
+    text-align: center;
+}
+.name{
+    font-size: 20px;
+}
+.roundScore, .compScore, .playerScore{
+    margin-top: 24px;
+    font-size: 36px;
+}
+i{
+    font-size: 42px;
+    animation: pop-out .5s ease-in-out;
+}
+
+.winner{
+    font-size: 42px;
+    text-align: center;
+    margin-top: 45px;
+    color: #FFECD1;
+}
+
+
