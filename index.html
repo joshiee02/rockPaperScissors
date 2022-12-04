@@ -4,12 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src = "rockpaperscissors.js"></script>
+    <title>rps-game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4b44820c50.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Rock+Salt&display=swap" rel="stylesheet">
 </head>
 <body>
-    <button>Rock</button>
-    <button>Paper</button>
-    <button>Scissors</button>
+    <h1 class ='rps'>
+        <div id="titleRock">Rock</div>
+        <div id="titlePaper">Paper</div>
+        <div id="titleScissors">Scissors</div>
+    </h1>
+
+    <h2 class = 'hidden'>Choose your weapon:</h2>
+    <div class="weapons hidden">
+    <button class ='rock'><i class="fa-regular fa-hand-back-fist"></i></button>
+    <button class ='paper'><i class="fa-regular fa-hand"></i></button>
+    <button class = 'scissors'><i class="fa-regular fa-hand-scissors"></i></button>
+    </div>
+
+    <div class ='versus hidden'>VS</div>
+    <div class="computer hidden">
+        <h3>Computer chose:</h3>
+        <div class = 'computerPick'></div>
+    </div>
+
+    <div class ='bothScore hidden'>
+        <div class = 'player'>
+            <div class="name">Player</div>
+            <div class ='playerScore' >0</div>
+        </div>
+        <div class = 'round'>
+            <div class ='name'>Round</div>
+            <div class = 'roundScore'></div>
+        </div>
+        <div class = 'computer'>
+            <div class ='name'>Computer</div>
+            <div class = 'compScore'>0</div>
+        </div>
+    </div>
+    <div class = 'winner'></div>
+    <script src="newRPS.js"></script>
 </body>
 </html>
